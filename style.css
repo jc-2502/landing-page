@@ -2,18 +2,29 @@
   font-family: Roboto, sans-serif;
 }
 
-.header-container, ul, .section-1-container, .section-1-left, .section-2, .cards, .card, .section-3, .section-4-container, .section-4-left {
+.container, ul, .section-1.left-side, .cards, .card {
   display: flex;
 }
 
-.section-1-left, .section-2, .card, .section-3, .section-4-left {
+.section-1.left-side, .card {
   flex-direction: column;
 }
 
-.header-container, .section-1-container, .section-4-container {
+body > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header.container, .section-1.container, .section-4.container {
   width: 1000px;
   margin: auto;
 }
+
+.section-1.container, .section-4.container {
+  padding: 10px;
+}
+
+/* ******************** colors/sizes/weights from specification image ******************** */
 
 /* dark blue background */
 .header, .section-1, .footer {
@@ -21,18 +32,18 @@
 }
 
 /* almost white text */
-.header-container h3, .section-1-left h1, .section-1-image-placeholder {
+.header.container h3, .section-1.left-side h1, .section-1.image-placeholder {
   color: #F9FAF8;
 }
 
 /* light gray text */
-a, .section-1-left p {
+a, .section-1.left-side p {
   color: #E5E7EB;
   font-size: 18px;
 }
 
 /* dark blue text */
-.section-2 h2, .section-3-text {
+.section-2 h2, .section-3.text {
   color: #1F2937;
   font-size: 36px;
 }
@@ -41,18 +52,21 @@ a, .section-1-left p {
   color: white;
 }
 
-.section-1-left h1, .section-2 h2 {
-  font-weight: 900px;
+.section-1.left-side h1, .section-2 h2 {
+  font-weight: 900;
 }
 
-.header-container {
+/* ******************** sections ******************** */
+
+.header.container {
   align-items: center;
+  gap: 24px;
+  padding: 20px 10px;
 }
 
-.header-container h3 {
+.header.container h3 {
   font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0px;
 }
 
 ul {
@@ -61,40 +75,42 @@ ul {
   padding: 0px;
   margin-left: auto;
   gap: 24px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
 }
 
-.section-1 {
-  height: 475px;
+.section-1.section {
+/*   min-height: 475px; */
+  padding-top: 100px;
+  padding-bottom: 100px;
   align-content: center;
 }
 
-.section-1-container {
-  align-items: stretch;
-}
-
-.section-1-left {
+.section-1.left-side {
   flex: 1;
   padding-right: 50px;
 }
 
-.section-1-left h1 {
+.section-1.left-side h1 {
   font-size: 48px;
-  margin: 0;
+  margin: 0px;
 }
 
-.section-1-left p {
-  margin: 0;
+.section-1.left-side p {
+  margin: 0px;
 }
 
-.section-1-image-placeholder {
+.section-1.image-placeholder {
   background-color: #697179;
-  flex: 1;
+  height: 240px;
+  width: 525px;
   text-align: center;
   align-content: center;
+  padding: 5px;
+  flex: none;
 }
 
 button {
@@ -105,27 +121,34 @@ button {
   border-radius: 8px;
   font-size: 18px;
   font-weight: bold;
+  flex: none;
 }
 
-.section-1-left button {
+.section-1.left-side button {
   border-color: #3882F6;
   margin-top: 12px;
 }
 
-.section-2 {
-  height: 500px;
-  justify-content: center;
-  align-items: center;
-  gap: 45px;
+.section-2.section {
+/*   min-height: 500px; */
+  padding-top: 100px;
+  padding-bottom: 100px;
+/*   justify-content: space-evenly; */
+/*   align-items: center; */
 }
 
 .section-2 h2 {
-  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .cards {
   justify-content: center;
   gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .card {
@@ -143,60 +166,66 @@ button {
 
 .card p {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   color: #666666;
   font-size: 18px;
 }
 
-.section-3 {
-  height: 425px;
+.section-3.section {
+/*   min-height: 425px; */
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #E5E7EB;
-  justify-content: center;
-  align-items: center;
+/*  justify-content: center;
+  align-items: center;*/
 }
 
-.section-3 > * {
-  width: 800px;
+.section-3.section > * {
+  max-width: 800px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin: auto;
 }
 
-.section-3-text {
-  margin: 0;
+.section-3.text {
   font-style: italic;
   /* font-weight: light doesn't work */
   font-weight: 300;
+  text-align: center;
 }
 
-.section-3-attribution {
+.section-3.attribution {
   text-align: right;
-  margin: 0;
   font-size: 24px;
   font-weight: 500;
 }
 
-.section-4 {
-  height: 350px;
+.section-4.section {
+/*   min-height: 350px; */
+  padding-top: 100px;
+  padding-bottom: 100px;
   align-content: center;
 }
 
-.section-4-container {
-  height: 150px;
+.section-4.container {
+/*   min-height: 150px; */
+  padding: 50px;
   background-color: #3882F6;
   border-radius: 8px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 150px;
 }
 
-.section-4-left h3 {
-  margin: 0;
+.section-4.left-side h3 {
+  margin: 0px;
   font-size: 24px;
 }
 
-.section-4-left p {
-  margin: 0;
+.section-4.left-side p {
+  margin: 0px;
 }
 
-.section-4-container button {
+.section-4.container button {
   border-color: white;
 }
 
