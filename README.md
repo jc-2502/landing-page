@@ -1,5 +1,5 @@
 # landing-page
 Landing page
 
-Recreate design in reference image; 'colors and fonts' image provides additional specification.
-Apply flexbox in implementation.
+Exercise to recreate design in reference image.
+Added resizing with smaller screen sizes.
