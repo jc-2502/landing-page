@@ -2,15 +2,15 @@
   font-family: Roboto, sans-serif;
 }
 
-.section, .container, ul, .section-1.left-side, .cards, .card {
+.section, .container, ul, .section-1 .left-side, .cards, .card {
   display: flex;
 }
 
-.section-1.left-side, .section-2.section, .card, .section-3.container {
+.section-1 .left-side, .section-2, .card, .section-3 .container {
   flex-direction: column;
 }
 
-.header.container, .section-1.container, .section-4.container {
+.header .container, .section-1 .container, .section-4 .container {
   width: 1000px;
 }
 
@@ -30,16 +30,16 @@
   align-items: center;
 }
 
-.section-1.container, .cards, .section-3.container {
+.section-1 .container, .cards, .section-3 .container {
   padding-left: 24px;
   padding-right: 24px;
 }
 
 /* remove default margins */
-.header.container h3, .section-1.left-side h1, p {
+.header h3, .section-1 h1, p {
   margin: 0px;
 }
-/* p: .section-1.left-side p, .card p, .section-3.container > *, .section-4.left-side p */
+/* p: .section-1 p, .card p, .section-3 .container > *, .section-4 p */
 
 /* ******************** colors/sizes/weights from specification image ******************** */
 
@@ -49,18 +49,18 @@
 }
 
 /* almost white text */
-.header.container h3, .section-1.left-side h1, .section-1.image-placeholder {
+.header h3, .section-1 h1, .section-1 .image-placeholder {
   color: #F9FAF8;
 }
 
 /* light gray text */
-a, .section-1.left-side p {
+a, .section-1 p {
   color: #E5E7EB;
   font-size: 18px;
 }
 
 /* dark blue text */
-.section-2 h2, .section-3.text {
+.section-2 h2, .section-3 .text {
   color: #1F2937;
   font-size: 36px;
 }
@@ -69,18 +69,18 @@ a, .section-1.left-side p {
   color: white;
 }
 
-.section-1.left-side h1, .section-2 h2 {
+.section-1 h1, .section-2 h2 {
   font-weight: 900;
 }
 
 /* ******************** sections ******************** */
 
-.header.container {
+.header .container {
   padding: 20px 24px;
   gap: 32px;
 }
 
-.header.container h3 {
+.header h3 {
   font-size: 24px;
 }
 
@@ -97,12 +97,12 @@ a {
   text-decoration: none;
 }
 
-.section-1.left-side {
+.section-1 .left-side {
   padding-right: 50px;
   flex: 1;
 }
 
-.section-1.image-placeholder {
+.section-1 .image-placeholder {
   background-color: #697179;
   text-align: center;
   align-content: center;
@@ -115,7 +115,7 @@ a {
   flex: auto;
 }
 
-.section-1.left-side h1 {
+.section-1 h1 {
   font-size: 48px;
 }
 
@@ -130,12 +130,12 @@ button {
   flex: none;
 }
 
-.section-1.left-side button {
+.section-1 button {
   border-color: #3882F6;
   margin-top: 12px;
 }
 
-.section-2.section {
+.section-2 {
   align-items: center;
 }
 
@@ -177,28 +177,28 @@ button {
   font-size: 18px;
 }
 
-.section-3.section {
+.section-3 {
   background-color: #E5E7EB;
 }
 
-.section-3.container {
+.section-3 .container {
   width: 800px;
   gap: 12px;
 }
 
-.section-3.text {
+.section-3 .text {
   font-style: italic;
   /* font-weight: light doesn't work */
   font-weight: 300;
 }
 
-.section-3.attribution {
+.section-3 .attribution {
   align-self: flex-end;
   font-size: 24px;
   font-weight: 500;
 }
 
-.section-4.container {
+.section-4 .container {
   padding: 50px;
   background-color: #3882F6;
   border-radius: 8px;
@@ -206,13 +206,13 @@ button {
   gap: 50px;
 }
 
-.section-4.left-side h3 {
+.section-4 h3 {
   margin-top: 0px;
   margin-bottom: 5px;
   font-size: 24px;
 }
 
-.section-4.container button {
+.section-4 button {
   border-color: white;
 }
 
