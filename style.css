@@ -41,6 +41,10 @@
 }
 /* p: .section-1 p, .card p, .section-3 .container > *, .section-4 p */
 
+:root {
+  --shared-light-blue: #3B82F6;
+}
+
 /* ******************** colors/sizes/weights from specification image ******************** */
 
 /* dark blue background */
@@ -103,7 +107,7 @@ a {
 }
 
 .section-1 .image-placeholder {
-  background-color: #697179;
+  background-color: #6D747D;
   text-align: center;
   align-content: center;
   padding: 10px;
@@ -120,7 +124,7 @@ a {
 }
 
 button {
-  background-color: #3882F6;
+  background-color: var(--shared-light-blue);
   width: 130px;
   height: 40px;
   border: solid 2px;
@@ -131,7 +135,7 @@ button {
 }
 
 .section-1 button {
-  border-color: #3882F6;
+  border-color: var(--shared-light-blue);
   margin-top: 12px;
 }
 
@@ -167,7 +171,7 @@ button {
 .card-image {
   width: 165px;
   height: 165px;
-  border: solid 4px #3882F6;
+  border: solid 4px var(--shared-light-blue);
   border-radius: 8px;
 }
 
@@ -200,7 +204,7 @@ button {
 
 .section-4 .container {
   padding: 50px;
-  background-color: #3882F6;
+  background-color: var(--shared-light-blue);
   border-radius: 8px;
   justify-content: space-evenly;
   gap: 50px;
